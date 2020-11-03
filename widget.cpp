@@ -69,8 +69,9 @@ void Widget::on_ButtonLoad_clicked()
     int i=0;
 
     while (!textFile.atEnd()) {
-        ui->listWidget->addItem(fileStream.readLine());
+        //ui->listWidget->addItem(fileStream.readLine());
+        ui->listWidget-> addItem(fileStream.readLine());
         i++;
-
     }
+    textFile.close();
 }
